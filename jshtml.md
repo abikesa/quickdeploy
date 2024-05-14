@@ -29,6 +29,10 @@ It looks like the issue might be with the initial call to `selectScenario('excel
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/script.js"></script>
+   <!-- does this fix the absence of "excellent" output? everything else is perfect!! -->
+    <script>
+        selectScenario('excellent'); // Set initial scenario to 'excellent'
+    </script>
 </body>
 
 </html>
