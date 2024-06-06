@@ -1,6 +1,5 @@
 'use strict';
 
-
 var scenarioVector = [1, 0, 0, 0, 0]; // Default to excellent self-rated health scenario
 
 function selectScenario(scenario) {
@@ -45,9 +44,14 @@ function calculateMortalityRisk(scenario) {
 
   const riskResults = timePoints.map((time, index) => `Risk at ${time} years: ${f1[index].toFixed(2)}%`);
 
+  // Clear existing chart before creating a new one
+  if (window.mortalityChart) {
+    window.mortalityChart.destroy();
+  }
+
   // Draw graph
   const ctx = document.getElementById('mortality-risk-graph').getContext('2d');
-  const chart = new Chart(ctx, {
+  window.mortalityChart = new Chart(ctx, {
     type: 'line',
     data: {
       labels: timePoints.map(String),
