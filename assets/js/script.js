@@ -1,6 +1,7 @@
 'use strict';
 
-var scenarioVector = [1, 0, 0, 0, 0]; // Default to excellent self-rated health scenario
+// Excellent isn't working & I'm going to investigate why ... 
+// var scenarioVector = [1, 0, 0, 0, 0]; // Default to excellent self-rated health scenario
 
 function selectScenario(scenario) {
   switch (scenario) {
