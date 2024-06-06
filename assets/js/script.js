@@ -58,7 +58,7 @@ function calculateMortalityRisk(scenario) {
       datasets: [{
         label: 'Mortality Risk',
         data: f1,
-        steppedLine: 'before',
+        stepped: true, // Step-wise line
         borderColor: colorSchemes[scenario],
         backgroundColor: colorSchemes[scenario].replace('1)', '0.2)'),
         borderWidth: 3
