@@ -1,3 +1,14 @@
+**Project Structure**: 
+   ```
+   your-project-folder/
+   ├── assets/
+   │   └── js/
+   │       └── script.js
+   ├── index.html
+   └── styles/
+       └── style.css
+   ```
+
 ```js
 webApp > main > assets > js > script.js
 ```
